@@ -1,0 +1,491 @@
+# NAVER WORKS 통계 페이지 셀렉터 정리
+# 실제 웹페이지에서 개발자 도구로 찾은 정확한 셀렉터들
+
+# ===== 계정 페이지 =====
+
+## 계정 페이지 - 구성원 수 그래프
+[계정_구성원수]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.graph
+
+## 계정 페이지 - 상태 별 구성원 수 그래프
+[계정_상태별구성원수]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div:nth-child(5) > div.graph
+
+## 계정 페이지 - 다운로드 버튼
+[계정_다운로드]
+download_button = #root > div > div.container > div > div.contents_head > div > div > button
+
+# ===== 액티브 유저 페이지 =====
+
+## 액티브 유저 페이지 - 액티브 유저 수 그래프
+[액티브 유저_액티브유저수]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.graph
+
+## 액티브 유저 페이지 - 앱 액티브 유저 수 그래프
+[액티브 유저_앱액티브유저수]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.graph
+
+## 액티브 유저 페이지 - 다운로드 버튼
+[액티브유저_다운로드]
+download_button = #root > div > div.container > div > div.contents_head > div > div > button
+
+
+# ===== 공용용량 페이지 =====
+
+## 공용용량 페이지 - 사용 현황 그래프
+[공용용량_사용현황]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div:nth-child(3) > div.graph
+
+## 공용용량 페이지 - 서비스별 용량 그래프
+[공용용량_서비스별용량]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div:nth-child(4) > div.graph
+
+## 공용용량 페이지 - 다운로드 버튼
+[공용용량_다운로드]
+download_button = #root > div > div.container > div > div.contents_head > div > div > button
+
+# ===== 게시판 페이지 =====
+
+## 게시판 페이지 - 게시물 등록 수 그래프
+[게시판_게시물등록수]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.graph
+
+## 게시판 페이지 - 게시물 읽음 수 그래프
+[게시판_게시물읽음수]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.graph
+
+## 게시판 페이지 - 다운로드 버튼
+[게시판_다운로드]
+download_button = #root > div > div.container > div > div.contents_head > div > div > button
+
+
+# ===== 메시지 페이지 =====
+
+## 메시지 페이지 - 메시지 수 그래프
+[메시지]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div > div.graph
+
+## 메시지 페이지 - 다운로드 버튼
+[메시지_다운로드]
+download_button = #root > div > div.container > div > div.contents_head > div > div > button
+
+
+# ===== 메일 페이지 =====
+
+## 메일 페이지 - 보낸 메일 수 그래프
+[메일_보낸메일수]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div:nth-child(1) > div.graph
+
+## 메일 페이지 - 받은 메일 수 그래프
+[메일_받은메일수]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div:nth-child(2) > div.graph
+
+## 메일 페이지 - 보낸/받은 메일 수 버튼
+[메일_보낸/받은 메일 수]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div > div.graph
+download_button = #root > div > div.container > div > div.contents_head > div > div > button
+download_menu = a[href*="보낸/받은 메일 수"]
+
+
+## 메일 페이지 - 다운로드 버튼
+[메일_보낸/받은 메일 수_다운로드]
+download_button = button.lw_btn_drop
+download_menu = a:contains('보낸/받은 메일 수')
+
+
+# ===== 캘린더 페이지 =====
+
+## 캘린더 페이지 - 일정 등록 수 그래프
+[캘린더]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div > div.graph
+
+
+## 캘린더 페이지 - 다운로드 버튼
+[캘린더_다운로드]
+download_button = #root > div > div.container > div > div.contents_head > div > div > button
+
+
+# ===== 주소록 페이지 =====
+
+## 주소록 페이지 - 외부 연락처 탭 그래프
+[주소록_외부연락처]
+# 탭 셀렉터
+tab = #root > div > div.container > div > div.contents_body > div > div.tab_cover > ul > li:nth-child(1) > a
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div.graph_cover > div.graph
+
+## 주소록 페이지 외부 연락처 탭 - 다운로드 버튼
+[주소록_외부연락처_다운로드]
+download_button = #root > div > div.container > div > div.contents_head > div > div > button
+
+## 주소록 페이지 - 그룹 탭 그래프
+[주소록_그룹]
+# 탭 셀렉터
+tab = #root > div > div.container > div > div.contents_body > div > div.tab_cover > ul > li:nth-child(2) > a
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div > div.graph
+
+## 주소록 페이지 그룹 탭 - 다운로드 버튼
+[주소록_그룹_다운로드]
+download_button = #root > div > div.container > div > div.contents_head > div > div > button
+
+
+# ===== 설문 페이지 =====
+
+##  설문 페이지 - 설문 생성 수 그래프
+[설문]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div > div.graph
+
+## 설문 페이지 - 다운로드 버튼
+[설문_다운로드]
+download_button = #root > div > div.container > div > div.contents_head > div > div > button
+
+
+# ===== 할 일 페이지 =====
+
+## 할 일 페이지 - 할 일 수 그래프
+[할 일]
+# 시작 날짜 관련 셀렉터
+start_date_input = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_tf_cover > input
+start_calendar_header = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > strong
+start_day_cell = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer td
+start_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+start_next_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+start_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+start_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(1) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 종료 날짜 관련 셀렉터
+end_date_input = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_tf_cover > input
+end_calendar_header = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > strong
+end_day_cell = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer td
+end_prev_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-year
+end_next_year_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-year
+end_prev_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-prev-mon
+end_next_mon_btn = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > p > div:nth-child(2) > div.lwds_calendar_layer > div > div > a.calendar-btn-next-mon
+
+# 기타 요소
+search_button = #root > div > div.container > div > div.contents_body > div > div > div.date_filter > div > button
+graph = #root > div > div.container > div > div.contents_body > div > div > div.graph
+
+## 할 일 페이지 - 다운로드 버튼
+[할일_다운로드]
+download_button = #root > div > div.container > div > div.contents_head > div > div > button
