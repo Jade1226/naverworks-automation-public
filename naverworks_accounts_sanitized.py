@@ -1,5 +1,6 @@
 # 계정 목록 (쿠키 저장/그래프 캡처용)
 ACCOUNTS = [
+    "기관1 (example1.org)",
     "기관2 (example2.org)",
     "기관3 (example3.org)",
     "기관4 (example4.org)",
@@ -10,8 +11,7 @@ ACCOUNTS = [
     "기관9 (example9.org)",
     "기관10 (example10.org)",
     "기관11 (example11.org)",
-    "기관12 (example12.org)",
-    "기관13 (example13.org)"
+    "기관12 (example12.org)"
 ]
 
 # 통계 페이지 목록 (URL, 페이지명) 형식
