@@ -175,13 +175,13 @@ TARGET_PAGES = [
 ## 🔐 로그인 URL 규칙
 
 - **기관L (example12.org)**: https://demo.example.com
-- **기관A (example1.org)**: https://demo.example.com/sso/user/login/view?agt_id=kiep-naver
+- **기관A (example1.org)**: https://demo.example.com/sso/user/login/view?agt_id=kxxx-naver
 - **그 외 모든 기관**: https://demo.example.com/kr/console/openapi/v2/app/list/view
 
 ## 📊 통계 분석 기능
 
 ### 기관별 동적 표구조
-- **특이기관**: 한국청소년정책연구원, 한국행정연구원
+- **특이기관**: 기관F, 기관B
   - 상태별 구성원 수: 사용중, 일시 정지, 접속 대기, 삭제
 - **일반기관**: 나머지 10개 기관
   - 상태별 구성원 수: 사용중, 일시 정지, 미접속, 삭제
@@ -242,7 +242,7 @@ TARGET_PAGES = [
 - 단위 포함 값 처리 결과
 
 ### 일반적인 문제
-1. **메일 파일 누락**: 한국교육개발원 등 일부 기관의 메일 파일이 통계 폴더에 없을 수 있습니다.
+1. **메일 파일 누락**: 기관K 등 일부 기관의 메일 파일이 통계 폴더에 없을 수 있습니다.
 2. **시트명 불일치**: 실제 엑셀 시트명과 매핑 테이블의 차이로 인한 문제
 3. **컬럼명 불일치**: 실제 컬럼명과 매핑 테이블의 차이로 인한 문제
 4. **패키지 누락**: pandas, numpy, openpyxl 패키지가 설치되지 않은 경우
